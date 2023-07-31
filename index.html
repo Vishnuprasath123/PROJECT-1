@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="display: flex; align-items: center; justify-content: center; margin-top: 200px;" >
+  
+
+  <fieldset>
+    
+    <p>First Number
+      <input type="number" id="first">
+    </p>
+    <p>Second Number
+      <input type="number" id="second">
+    </p>
+    
+    <button onclick="add()">ADD</button>
+    <button onclick="sub()">SUB</button>
+    <button onclick="mul()">MUL</button>
+    <button onclick="div()">DIV</button>
+    <p>
+      Answer
+      <input id="answer">
+    </p>
+      <script>
+        function add(){
+          let a,b,sum;
+          a=parseInt(document.getElementById('first').value);
+          b=parseInt(document.getElementById('second').value);
+          sum=a+b;
+          document.getElementById('answer').value=sum;
+        }
+        function sub(){
+          let a,b,sum;
+          a=parseInt(document.getElementById('first').value);
+          b=parseInt(document.getElementById('second').value);
+          sum=a-b;
+          document.getElementById('answer').value=sum;
+        }
+        function mul(){
+          let a,b,sum;
+          a=parseInt(document.getElementById('first').value);
+          b=parseInt(document.getElementById('second').value);
+          sum=a*b;
+          document.getElementById('answer').value=sum;
+        }
+        function div(){
+          let a,b,sum;
+          a=parseInt(document.getElementById('first').value);
+          b=parseInt(document.getElementById('second').value);
+          sum=a/b;
+          document.getElementById('answer').value=sum;
+        }
+      
+    </script>
+  </fieldset>
+  
+</body>
+</html>
